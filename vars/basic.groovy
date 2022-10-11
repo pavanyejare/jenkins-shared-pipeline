@@ -3,6 +3,6 @@ def call(name){
   
 }
 
-def checkout(url){
-	git branch: 'main', url: $url
+def checkout(repourl){
+	git branch: 'main', url: "${repourl}"
 	}
